@@ -36,12 +36,11 @@ import java.util.List;
 public class FragmentList2 extends Fragment {
 
     private String stringTaskList = "";
-    private AppDatabase db; // Экземпляр базы данных
+    private AppDatabase db;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // Инициализация базы данных
         db = Room.databaseBuilder(requireContext(), AppDatabase.class, "app-database").build();
     }
 
@@ -68,7 +67,6 @@ public class FragmentList2 extends Fragment {
 
         Button button_save = view.findViewById(R.id.save);
         button_save.setOnClickListener(v -> {
-            // Вставка данных в базу данных
             for (Item2 item2 : items2) {
                 db.itemDao().insertItem(item2);
             }
@@ -76,7 +74,6 @@ public class FragmentList2 extends Fragment {
 
         Button bCheckTasks = view.findViewById(R.id.check);
         bCheckTasks.setOnClickListener(v -> {
-            // Получение данных из базы данных
             new Thread(() -> {
                 List<Item2> items = db.itemDao().getAllItems();
             }).start();

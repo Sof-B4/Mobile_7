@@ -24,14 +24,14 @@
             android:id="@+id/save"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Сохранить список"
+            android:text="Save list"
             android:backgroundTint="@color/button_color"/>
 
         <Button
             android:id="@+id/check"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Прочитать"
+            android:text="Read"
             android:backgroundTint="@color/button_color"/>
 
     </LinearLayout>

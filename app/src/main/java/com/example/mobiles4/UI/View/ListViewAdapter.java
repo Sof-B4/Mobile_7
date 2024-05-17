@@ -18,10 +18,7 @@ public class ListViewAdapter extends ArrayAdapter<Item> {
     private int layout;
     private List<Item> items;
     public ListViewAdapter(Context context, int resource, List<Item> items) {
-//        super(context, resource, viewModelList);
-//        this.viewModelList = viewModelList;
-//        this.layout = resource;
-//        this.inflater = LayoutInflater.from(context);
+
         super(context, resource, items);
         this.items = items;
         this.layout = resource;
