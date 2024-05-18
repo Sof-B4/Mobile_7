@@ -44,12 +44,6 @@ public class ListViewAdapter extends ArrayAdapter<Item> {
 
 
 
-//        View view = inflater.inflate(this.layout, parent, false);
-//        TextView textView = view.findViewById(R.id.textView);
-//        ImageView imageView = view.findViewById(R.id.imageView);
-//        Task task = viewModelList.get(position);
-//        imageView.setImageResource(task.getImage());
-//        textView.setText(task.getText());
-//        return view;
+
     }
 }
